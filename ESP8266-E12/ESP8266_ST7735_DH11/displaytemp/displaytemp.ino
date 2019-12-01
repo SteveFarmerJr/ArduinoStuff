@@ -60,7 +60,7 @@ void loop()
   // read humidity in rH%
   int Humi = dht11.readHumidity() * 10;
   // read temperature in degree Celsius
-  int Temp = dht11.readTemperature(true) * 10;
+  int Temp = dht11.readTemperature(true) * 10;  //pass true in to get Fahrenheit
   //convert to F
   int FTemp = (1.8 * Temp) + 32;
   // print temperature (in °C)
